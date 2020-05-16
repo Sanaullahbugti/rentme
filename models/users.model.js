@@ -22,6 +22,9 @@ const user = new Schema( {
         street: { type: String },
         city: { type: String }
     },
+    items: [{
+        type: ObjectId
+    }]
 } );
 
 // Creating Local Driver Model
