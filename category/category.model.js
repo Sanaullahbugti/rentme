@@ -5,7 +5,7 @@ const { ObjectId } = Types;
 
 
 const category = new Schema( {
-    name: {
+    title: {
         type: String,
         required: true
     },
