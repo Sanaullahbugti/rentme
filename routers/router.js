@@ -1,5 +1,5 @@
 let express = require( 'express' );
-import category from '../category/category.router'
+let category = require( '../features/category/category.router' )
 module.exports = function ( app ) {
     let router = express.Router();
     //e.g use user routes at /api/users
