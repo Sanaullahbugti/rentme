@@ -31,4 +31,5 @@ const user = new Schema( {
 const User = mongoose.model( "User", user );
 
 // Exporting Local Driver Model
-export { User };
+//export { User };
+module.exports = User;
