@@ -5,7 +5,7 @@ const { ObjectId } = Types;
 
 
 const item = new Schema( {
-    name: {
+    title: {
         type: String,
         required: true
     },
@@ -19,7 +19,7 @@ const item = new Schema( {
     },
     category: {
         type: ObjectId,
-        required: true
+        ref:"Category"
     },
     bookedForNextDays: {
         type: Number,
@@ -33,5 +33,4 @@ const item = new Schema( {
 
 const Items = mongoose.model( "Items", item );
 
-
-export { Items };
+module.exports = Items
